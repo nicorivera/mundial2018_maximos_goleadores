@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Máximos goleadores de selección - lanacion.com</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"> 
+    <!-- for Iphone -->
+    <meta name="apple-mobile-web-app-capable" content="no">
+    
+    <link rel="stylesheet" type="text/css" href="https://especiales.lanacion.com.ar/multimedia/proyectos/fonts/font.css">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="lib/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_max_1100.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_960.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_850.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_750.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_640_500.css" />
+    <!-- endbuild -->
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript">
+            document.createElement("nav");
+            document.createElement("header");
+            document.createElement("footer");
+            document.createElement("section");
+            document.createElement("article");
+            document.createElement("aside");        
+            document.createElement("hgroup");   
+            document.createElement("canvas");   
+        </script>
+
+        <style> 
+            .wrapper, .ayuda2, .ayuda3{display:none !important}
+            footer{display:none}
+            div.mensaje{width:100%; max-width:990px; height:500px; position:relative; }  
+            div.mensaje div.texto{width:100%; height:400px; position:absolute; top:50px; } 
+            div.mensaje div.texto p{color:#787878; font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; line-height:1.5;}   
+            div.mensaje div.texto p a{color:#335577; font-weight:bold;} 
+        </style>
+    <![endif]-->
+<!-- 
+GOOGLE ANALYTICS >>> CHANGE data-page tag content ...
+-->
+
+    <script id="ga_scr" data-page="mundial2018_maximos_goleadores">var ga_page = document.getElementById('ga_scr').dataset.page;var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-621326-6']);_gaq.push(['_setDomainName', '.lanacion.com.ar']);_gaq.push(['_setCampaignCookieTimeout',0]);_gaq.push(['_trackPageview', ga_page]);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+
+</head>
+<body>
+<div class="container clearfix">
+
+    <section id="filtros"> 
+
+        <h2>Filtrar por tipo de conversión</h2>
+
+        <select id="tipo" style="width:20%">
+<!--             <option value="all">Todas</option>
+            <option value="zurda">Pierna Izquierda</option>
+            <option value="derecha">Pierna Derecha</option>
+            <option value="cabeza">Cabeza</option>
+            <option value="tirolibre">Tiro libre</option>
+            <option value="penal">Penal</option>
+            <option value="mano">Mano</option> -->
+        </select><br>
+
+        <h2 id="titulo2">Filtrar por tipo de competencia</h2>
+        <select id="torneo" style="width:20%">
+<!--             <option value="all">Todos</option>
+            <option value="mundial">Mundial</option>
+            <option value="copaamerica">Copa América</option>
+            <option value="eliminatorias">Eliminatorias</option>
+            <option value="amistoso">Amistoso</option> -->
+        </select>
+
+    </section>
+
+    <section id="comparador"> 
+        <div class="jugador" id="jug1"> <!-- JUGADOR 1 -->
+            <div class="datos">
+                <div class="nombre">Messi</div>
+                <div class="foto"><img src="" width="100%" /></div>
+                <div class="goles"></div>
+            </div>
+            <ul class="list_goal_type"></ul>
+            <p class="debut">&nbsp;</p>
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="jugador" id="jug2"> <!-- JUGADOR 2 -->
+             
+             <div class="datos">
+                <div class="goles"></div>
+                <div class="foto"><img src="" width="100%" /></div>
+                <div class="nombre">
+                    <select id="jugadores" style="width:100%">
+                         <option value="batistuta">Batistuta</option>
+                         <option value="aguero">Agüero</option>
+                         <option value="maradona">Maradona</option>
+                         <option value="crespo">Crespo</option>
+                         <option value="higuain">Higuaín</option>
+                    </select>
+                </div>
+             </div>
+
+            <ul class="list_goal_type"></ul>
+
+            <p class="debut">&nbsp;</p>
+        </div>
+
+    </section>
+    
+    <footer>
+        <a href="./templates/credits.html" class="btn_light ajax_modal" id="creditos">Créditos</a>
+    </footer>
+
+</div> <!-- end wrapper_all -->
+
+<div id="append"> <!-- div for append dinamics contents... --></div>
+
+<!-- LN LOADER -->
+<div id="loader">
+<script src="https://especiales.lanacion.com.ar/multimedia/proyectos/LN_loader/js/spin.min.js"></script>   
+
+<div id="spinner" style="width: 60px; height: 120px; position: relative; left: 50%; top: 20%; margin-left:-30px; background: url('https://especiales.lanacion.com.ar/multimedia/proyectos/LN_loader/ln.svg') center no-repeat;"></div>
+
+<script>
+var opts={lines:40,length:2,width:1,radius:25,corners:0.5,rotate:1,color:"#006998",speed:1,trail:60,shadow:false,hwaccel:false,className:"spinner",zIndex:2000000000,top:0,left:0};var target=document.getElementById("spinner");var spinner=new Spinner(opts).spin(target);</script>
+</div>
+<!-- LN LOADER -->
+
+<!-- Template tootip -->
+<script type="text/template" id="tmpl_tooltip">
+    <div class="row goln"><span class="th goln">Gol número</span><span class="num"><%= numero %></span></div>
+    <div class="row fech"><span class="th fech"></span><%= fecha %></div>
+    <div class="row riv"><span class="th riv">Rival</span><br><%= rival %></div>
+    <div class="linea"></div>
+    <div class="row tec"><span class="th tec">Técnico</span><br><%= tecnico %></div>
+    <!-- <div class="row"><span class="th">Modo</span> <span class="blue"><%= modo %></span></div> -->
+</script>
+
+</body>
+</html>
+
+<!-- PYM -->
+<script src="https://especiales.lanacion.com.ar/multimedia/proyectos/js/pym.js" ></script>
+<!-- PYM -->
+
+<!-- build:js -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/underscore/underscore.js"></script>
+<script src="lib/d3-queue/d3-queue.js"></script>
+<script src="lib/d3/d3.js"></script>
+<script src="lib/tooltip_d3/src/tooltip.d3.js"></script>
+<script src="lib/select2/dist/js/select2.min.js"></script>
+<script src="js/index.js"></script>
+<!-- endbuild -->
+

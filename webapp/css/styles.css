@@ -1,0 +1,495 @@
+/* Styles for App */
+section{
+    position: relative;
+    border-top:1px solid #dadada;
+    padding: 15px 0;
+}
+
+h2{
+    color: #000;
+    font: normal 14px/16px 'suecaslab', georgia;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 10px;
+    letter-spacing: .1px;
+}
+
+/*///// FILTROS /////*/
+
+section#filtros{
+}
+
+section#filtros br{
+    display: none;
+}
+
+section#filtros select{
+    display: inline-block;
+    vertical-align: top;
+}
+
+section#filtros h2#titulo2{
+    margin-left: 60px;
+}
+
+/*///// COMPARADOR /////*/
+
+section#comparador{
+    overflow: hidden;
+    position: relative;
+}
+
+section#comparador div.jugador{
+    width: 49.5%;
+    min-height: 300px;
+    display: inline-block;  
+    margin-top: 30px;
+    position: relative;
+    vertical-align: top;
+}
+
+
+section#comparador div.separador{
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    display: inline-block;
+    top: 190px;
+    left: 50%;
+    position: absolute;
+}
+
+section#comparador div.separador::after{
+    content: "vs";
+    width:10px;
+    position: absolute;
+    top:-100px;
+    left: -15px;
+    color:#000;
+    font: normal 22px/15px 'Suecaslabbold', georgia;
+}
+
+section#comparador div.jugador#jug2{
+    margin-left: -3px;
+}
+
+section#comparador div.jugador div.datos{
+    width: 84%;
+    text-align: right;
+    display: block;
+    padding: 0px 10% 22px 10%;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+section#comparador div.jugador#jug2 div.datos{
+    text-align: left;
+}
+
+section#comparador div.jugador div.datos div.nombre{
+    font-family: 'Suecaslabbold', georgia;
+    font-size: 22px;
+    padding: 45px 6%;
+    display: inline-block;
+    vertical-align: top;
+    color: #CD6C67;
+}
+
+section#comparador div.jugador#jug2 div.datos div.nombre{
+    max-width: 210px;
+    font-size: 18px;
+    padding: 39px 0;
+    margin-left: 20px;
+    text-align: left;
+    width: calc(100% - 344px);
+    color: #77B9E7;
+}
+
+section#comparador div.jugador div.datos div.goles{
+    width: 180px;
+    font: normal 50px/30px 'Suecaslabbold', georgia;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    color: #77B9E7;
+}
+
+section#comparador div.jugador#jug1 div.datos div.goles{
+    text-align: right;
+    color: #CD6C67;
+}
+
+section#comparador div.jugador div.datos div.goles span.gol{
+    font-family: 'Suecaslabthin', georgia;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+}
+
+
+section#comparador div.jugador div.datos div.goles span.resto{
+    color: #000;
+    font-size: 40px;
+}
+
+section#comparador div.jugador div.datos div.foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+section#comparador div.jugador div.datos div.foto img{
+    position: absolute;
+    left: -3px;
+    z-index: 200;
+}
+
+section#comparador div.jugador div.datos div.foto:before{
+    content: "";
+    width: 105px;
+    height: 105px;
+    background-color: #77B9E7;
+    opacity: 0.5;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 2px;
+    z-index: 100;
+}
+section#comparador div.jugador#jug1 div.datos div.foto:before{
+    background-color: #CD6C67;
+}
+
+/*section#comparador div.jugador div.nombre div.datos{
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 20px;
+}*/
+
+
+section#comparador div.jugador p.debut{
+    font-family: 'Suecaslabmedium', georgia;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 20px 40px;
+    margin-bottom: 0;
+    color: #77B9E7;
+}
+
+
+section#comparador div.jugador#jug1 p.debut{
+    text-align: right;
+    color: #CD6C67;
+}
+
+section#comparador div.jugador ul{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    list-style-type: none;
+    min-height: 350px;
+}
+
+section#comparador div.jugador#jug1 ul{
+    text-align: right;
+}
+
+section#comparador div.jugador ul li{
+    /*width: 60px;
+    height: 60px;
+    background-size: 64px;*/
+    width: 45px;
+    height: 45px;
+    background-size: 45px;
+    
+    margin: 1px 5px;
+    display: inline-block;
+    /*background-image: url("../img/sprite1.svg");*/
+    cursor:pointer;
+    border-radius:5px;
+    border:1px solid #fff;
+    
+    background-position: center center;
+    transition: all 0.5s;
+}
+section#comparador div.jugador ul li.hidden { opacity: 0 !important; }
+
+section#comparador div.jugador ul li:hover{
+   border:1px solid #dadada;
+}
+/*
+section#comparador div.jugador ul li.zurda{
+    background-position: center -1px;
+}
+
+section#comparador div.jugador ul li.diestra{
+    background-position: center -98px;
+}
+
+section#comparador div.jugador ul li.cabeza{
+    background-position: center -196px;
+}
+
+section#comparador div.jugador ul li.tirolibre{
+    background-position: center -290px;
+}
+
+section#comparador div.jugador ul li.penal{
+    background-position: center -398px;
+}
+
+section#comparador div.jugador ul li.mano{
+    background-position: center -506px;
+}
+*/
+
+section#comparador div.jugador ul.filtrado li{
+    opacity: 0.2;
+}
+
+section#comparador div.jugador ul.filtrado li.activo{
+    opacity: 1;
+}
+/*
+section#comparador div.jugador ul.filtrado li.derecha.activo{
+    background-image: url("../img/gif/derecha.gif");
+    background-position: center center;
+}
+
+section#comparador div.jugador ul.filtrado li.zurda.activo{
+    background-image: url("../img/gif/izquierda.gif");
+    background-position: center center;
+}
+
+section#comparador div.jugador ul.filtrado li.penal.activo{
+    background-image: url("../img/gif/penal.gif");
+    background-position: center center;
+}
+
+section#comparador div.jugador ul.filtrado li.cabeza.activo{
+    background-image: url("../img/gif/cabeza.gif");
+    background-position: center center;
+}
+
+section#comparador div.jugador ul.filtrado li.tirolibre.activo{
+    background-image: url("../img/gif/tirolibre.gif");
+    background-position: center center;
+}
+*/
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+/* SELECT 2 CUSTOM */
+
+.select2-container {
+    margin-right: 10px;
+    text-align: left;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    font-family: 'Suecaslabbold', Georgia;
+    color:#000;
+    text-align: left;
+    line-height: 32px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #000;
+    border-radius: 100px;
+    height: 34px;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 4px;
+    right: 9px;
+}
+
+.select2-dropdown{
+    font-family: 'Suecaslabmedium', Georgia;
+}
+
+.select2-results__option {
+    padding: 9px 6px;
+}
+
+/* multiple */
+
+.select2-container--default .select2-selection--multiple{
+    border: 1px solid #000;
+    border-radius: 20px;
+    min-height: 34px;
+    
+}
+
+.select2-container--default .select2-search--inline .select2-search__field{
+    font-family: 'Suecaslabmedium', Georgia;
+    color:#000;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    padding: 0 15px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #000;
+    border: 0px solid #aaa;
+    border-radius: 15px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 3px;
+    padding: 6px 10px;
+    font-family: 'Suecaslabmedium';
+    font-size: 15px;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid #0084b4 1px;
+    outline: 0;
+        overflow: hidden;
+}
+
+.select2-results__option {
+    padding: 9px 6px;
+    color: #000;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #000;
+    color: #fff;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #000;
+    color: #fff;
+}
+.select2-container--default .select2-results>.select2-results__options{
+    border-color: #000;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #000 transparent transparent transparent;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent #000 transparent;
+}
+
+/* ///// select 2 JUGADOR ///////////*/
+
+#jug2 .select2-container {
+    text-align: left !important;
+}
+
+#jug2 .select2-results__option {
+    padding: 9px 6px;
+    color: #77B9E7;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+#jug2 .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #77B9E7 !important;
+    color: #fff;
+}
+#jug2 .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #77B9E7 !important;
+    color: #fff;
+}
+
+#jug2 .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color:#77B9E7;
+}
+#jug2 .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #77B9E7 transparent transparent transparent;
+}
+
+#jug2 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent #77B9E7 transparent !important;
+}
+
+#jug2 .select2-container--default .select2-selection--single{
+    border: 1px solid #77B9E7;
+    border-radius: 100px;
+    color: #77B9E7;
+}
+
+.tooltipd3 {
+    background:#FFFFFF;
+    border: #ccc solid 1px;
+    padding: 10px 12px 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    z-index: 999;
+
+}
+
+.tooltipd3 .row {
+    font-family: 'Suecaslabbold', Georgia;
+    font-size: 12px;
+}
+.tooltipd3 .row span.th { 
+    font-family: 'suecaslab', Georgia;
+    /*display: inline-block;*/
+    width: 70px;
+    text-align: right;
+    padding: 5px 10px 5px 0;
+    margin: 0 5px 0 0; 
+ }
+
+.tooltipd3 .row.goln{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.tooltipd3 .row.goln span.num {
+    /*color: #33ACE0;*/
+    font-size: 15px;
+    text-align: left;
+}
+
+.tooltipd3 .row.riv, .tooltipd3 .row.riv span.th.riv{
+    display: inline-block;
+    text-align: right;
+}
+.tooltipd3 .row.riv{
+    margin-bottom: 10px;
+}
+
+.tooltipd3 div.linea{
+    width: 2px;
+    height: 30px;
+    display: inline-block;
+    border-right: 1px solid #000;
+    margin: auto 5px;
+}
+
+.tooltipd3 .row.fech{
+    margin: 5px auto 10px;
+    text-align: center;
+    font-family: 'Suecaslabmedium', Georgia;
+}
+
+.tooltipd3 .row.tec, .tooltipd3 .row.tec span.th.tec{
+    display: inline-block;
+    text-align: left;
+}
+.tooltipd3 .row.tec span.th.tec, .tooltipd3 .row.riv span.th.riv{
+    font-family: 'Suecaslabmedium', Georgia;
+}

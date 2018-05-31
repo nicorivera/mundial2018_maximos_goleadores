@@ -1,0 +1,42 @@
+@media (max-width: 1150px) {
+    section#filtros h2{
+        width: 20%;
+        padding-top: 0px;
+    }
+
+    .select2-container {
+        vertical-align: top;
+    }
+
+    section#filtros br{
+        /*display: block;*/
+    }
+
+    section#comparador div.jugador div.datos div.goles {
+        width: 130px;
+        font: normal 38px/39px 'Suecaslabbold', georgia;
+        margin-top: 14px;
+    }
+
+    section#comparador div.jugador{
+        margin-top: 10px;
+    }
+
+    section#comparador div.jugador div.datos div.nombre{
+        padding: 45px 4%;
+    }
+
+    section#comparador div.jugador#jug2 div.datos div.nombre{
+        width: calc(100% - 269px);
+    }
+
+    section#comparador div.separador{
+        margin-top: 90px;
+        height: 750px;
+            top: 82px;
+    }
+
+
+
+}
+

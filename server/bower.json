@@ -1,0 +1,18 @@
+{
+  "name": "Project LN",
+  "version": "0.0.0",
+  "authors": [
+    "Lanacion.com.ar"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "2.1.4",
+    "underscore": "~1.8.3",
+    "hammerjs": "2.0.4",
+    "select2": "4.0.2",
+    "minisocial": "https://gist.github.com/5752960.git",
+    "d3": "~3.5.17",
+    "d3-queue": "queue-async#~2.0.3",
+    "tooltip_d3": "tooltipd3#~1.0.1"
+  }
+}

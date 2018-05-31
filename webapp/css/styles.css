@@ -1,7 +1,7 @@
 /* Styles for App */
-section{
+div{
     position: relative;
-    border-top:1px solid #dadada;
+    /*border-top:1px solid #dadada;*/
     padding: 15px 0;
 }
 
@@ -16,30 +16,32 @@ h2{
 
 /*///// FILTROS /////*/
 
-section#filtros{
+div#filtros{
+    text-align: center;
+    border-bottom: 1px solid #dadada;
 }
 
-section#filtros br{
+div#filtros br{
     display: none;
 }
 
-section#filtros select{
+div#filtros select{
     display: inline-block;
     vertical-align: top;
 }
 
-section#filtros h2#titulo2{
+div#filtros h2#titulo2{
     margin-left: 60px;
 }
 
 /*///// COMPARADOR /////*/
 
-section#comparador{
+div#comparador{
     overflow: hidden;
     position: relative;
 }
 
-section#comparador div.jugador{
+div#comparador div.jugador{
     width: 49.5%;
     min-height: 300px;
     display: inline-block;  
@@ -49,17 +51,17 @@ section#comparador div.jugador{
 }
 
 
-section#comparador div.separador{
+div#comparador div.separador{
     width: 1px;
     height: 100%;
     background-color: #000;
     display: inline-block;
-    top: 190px;
+    top: 210px;
     left: 50%;
     position: absolute;
 }
 
-section#comparador div.separador::after{
+div#comparador div.separador::after{
     content: "vs";
     width:10px;
     position: absolute;
@@ -69,23 +71,23 @@ section#comparador div.separador::after{
     font: normal 22px/15px 'Suecaslabbold', georgia;
 }
 
-section#comparador div.jugador#jug2{
+div#comparador div.jugador#jug2{
     margin-left: -3px;
 }
 
-section#comparador div.jugador div.datos{
+div#comparador div.jugador div.datos{
     width: 84%;
     text-align: right;
     display: block;
-    padding: 0px 10% 22px 10%;
+    padding: 0px 10% 10px 10%;
     border-bottom: 1px solid #e4e4e4;
 }
 
-section#comparador div.jugador#jug2 div.datos{
+div#comparador div.jugador#jug2 div.datos{
     text-align: left;
 }
 
-section#comparador div.jugador div.datos div.nombre{
+div#comparador div.jugador div.datos div.nombre{
     font-family: 'Suecaslabbold', georgia;
     font-size: 22px;
     padding: 45px 6%;
@@ -94,7 +96,7 @@ section#comparador div.jugador div.datos div.nombre{
     color: #CD6C67;
 }
 
-section#comparador div.jugador#jug2 div.datos div.nombre{
+div#comparador div.jugador#jug2 div.datos div.nombre{
     max-width: 210px;
     font-size: 18px;
     padding: 39px 0;
@@ -104,21 +106,22 @@ section#comparador div.jugador#jug2 div.datos div.nombre{
     color: #77B9E7;
 }
 
-section#comparador div.jugador div.datos div.goles{
+div#comparador div.jugador div.datos div.goles{
     width: 180px;
     font: normal 50px/30px 'Suecaslabbold', georgia;
     text-transform: uppercase;
     display: inline-block;
     vertical-align: top;
     color: #77B9E7;
+    padding-top: 22px;
 }
 
-section#comparador div.jugador#jug1 div.datos div.goles{
+div#comparador div.jugador#jug1 div.datos div.goles{
     text-align: right;
     color: #CD6C67;
 }
 
-section#comparador div.jugador div.datos div.goles span.gol{
+div#comparador div.jugador div.datos div.goles span.gol{
     font-family: 'Suecaslabthin', georgia;
     font-size: 20px;
     line-height: 25px;
@@ -126,27 +129,28 @@ section#comparador div.jugador div.datos div.goles span.gol{
 }
 
 
-section#comparador div.jugador div.datos div.goles span.resto{
+div#comparador div.jugador div.datos div.goles span.resto{
     color: #000;
     font-size: 40px;
 }
 
-section#comparador div.jugador div.datos div.foto{
+div#comparador div.jugador div.datos div.foto{
     width: 103px;
     height: 103px;
     border-radius: 100px;
     display: inline-block;
     overflow: hidden;
     position: relative;
+    padding: 0px;
 }
 
-section#comparador div.jugador div.datos div.foto img{
+div#comparador div.jugador div.datos div.foto img{
     position: absolute;
     left: -3px;
     z-index: 150;
 }
 
-section#comparador div.jugador div.datos div.foto:before{
+div#comparador div.jugador div.datos div.foto:before{
     content: "";
     width: 105px;
     height: 105px;
@@ -158,12 +162,12 @@ section#comparador div.jugador div.datos div.foto:before{
     left: 2px;
     z-index: 200;
 }
-section#comparador div.jugador#jug1 div.datos div.foto:before{
+div#comparador div.jugador#jug1 div.datos div.foto:before{
     background-color: #CD6C67;
     z-index: 200;
 }
 
-/*section#comparador div.jugador div.nombre div.datos{
+/*div#comparador div.jugador div.nombre div.datos{
     width: 55%;
     display: inline-block;
     vertical-align: top;
@@ -171,7 +175,7 @@ section#comparador div.jugador#jug1 div.datos div.foto:before{
 }*/
 
 
-section#comparador div.jugador p.debut{
+div#comparador div.jugador p.debut{
     font-family: 'Suecaslabmedium', georgia;
     font-size: 13px;
     line-height: 1.5;
@@ -184,13 +188,15 @@ section#comparador div.jugador p.debut{
 }
 
 
-section#comparador div.jugador#jug1 p.debut{
+div#comparador div.jugador#jug1 p.debut{
     text-align: right;
     color: #CD6C67;
     vertical-align: bottom;
+    position: absolute;
+    right: 0px;
 }
 
-section#comparador div.jugador ul{
+div#comparador div.jugador ul{
     width: 90%;
     margin: 0px auto;
     margin-top: 30px;
@@ -198,11 +204,11 @@ section#comparador div.jugador ul{
     min-height: 480px;
 }
 
-section#comparador div.jugador#jug1 ul{
+div#comparador div.jugador#jug1 ul{
     text-align: right;
 }
 
-section#comparador div.jugador ul li{
+div#comparador div.jugador ul li{
     /*width: 60px;
     height: 60px;
     background-size: 64px;*/
@@ -219,66 +225,66 @@ section#comparador div.jugador ul li{
     transition: all 0.5s;
 }
 
-section#comparador div.jugador ul li.hidden { opacity: 0 !important; }
+div#comparador div.jugador ul li.hidden { opacity: 0 !important; }
 
-section#comparador div.jugador ul li:hover{
+div#comparador div.jugador ul li:hover{
    border:1px solid #000;
 }
 /*
-section#comparador div.jugador ul li.zurda{
+div#comparador div.jugador ul li.zurda{
     background-position: center -1px;
 }
 
-section#comparador div.jugador ul li.diestra{
+div#comparador div.jugador ul li.diestra{
     background-position: center -98px;
 }
 
-section#comparador div.jugador ul li.cabeza{
+div#comparador div.jugador ul li.cabeza{
     background-position: center -196px;
 }
 
-section#comparador div.jugador ul li.tirolibre{
+div#comparador div.jugador ul li.tirolibre{
     background-position: center -290px;
 }
 
-section#comparador div.jugador ul li.penal{
+div#comparador div.jugador ul li.penal{
     background-position: center -398px;
 }
 
-section#comparador div.jugador ul li.mano{
+div#comparador div.jugador ul li.mano{
     background-position: center -506px;
 }
 */
 
-section#comparador div.jugador ul.filtrado li{
+div#comparador div.jugador ul.filtrado li{
     opacity: 0.2;
 }
 
-section#comparador div.jugador ul.filtrado li.activo{
+div#comparador div.jugador ul.filtrado li.activo{
     opacity: 1;
 }
 /*
-section#comparador div.jugador ul.filtrado li.derecha.activo{
+div#comparador div.jugador ul.filtrado li.derecha.activo{
     background-image: url("../img/gif/derecha.gif");
     background-position: center center;
 }
 
-section#comparador div.jugador ul.filtrado li.zurda.activo{
+div#comparador div.jugador ul.filtrado li.zurda.activo{
     background-image: url("../img/gif/izquierda.gif");
     background-position: center center;
 }
 
-section#comparador div.jugador ul.filtrado li.penal.activo{
+div#comparador div.jugador ul.filtrado li.penal.activo{
     background-image: url("../img/gif/penal.gif");
     background-position: center center;
 }
 
-section#comparador div.jugador ul.filtrado li.cabeza.activo{
+div#comparador div.jugador ul.filtrado li.cabeza.activo{
     background-image: url("../img/gif/cabeza.gif");
     background-position: center center;
 }
 
-section#comparador div.jugador ul.filtrado li.tirolibre.activo{
+div#comparador div.jugador ul.filtrado li.tirolibre.activo{
     background-image: url("../img/gif/tirolibre.gif");
     background-position: center center;
 }

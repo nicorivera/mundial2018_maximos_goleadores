@@ -1,6 +1,6 @@
 @media (max-width: 850px) {
 
-    section#comparador div.separador {
+    div#comparador div.separador {
         height: 800px;
     }
 

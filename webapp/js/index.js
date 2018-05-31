@@ -269,7 +269,7 @@ var OL = {
             var _data_torneo = [{id:"all", text:"Todas"}];
             
             $('#torneo').select2({
-                 minimumResultsForSearch: Infinity,
+                minimumResultsForSearch: Infinity,
                 data: _data_torneo.concat(goal_goups.torneo)
             });
             
@@ -281,7 +281,7 @@ var OL = {
 
             var goal_type ={
                 tipo: {},
-                torneo: {}                
+                torneo: {}
             }; 
 
             d3.selectAll("ul.list_goal_type li").data().forEach(function(d){

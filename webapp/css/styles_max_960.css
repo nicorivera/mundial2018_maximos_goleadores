@@ -1,46 +1,46 @@
 @media (max-width: 960px) {
 
-    section#comparador div.jugador {
+    div#comparador div.jugador {
         width: 49%;
     }
 
-    section#comparador div.jugador ul li{
+    div#comparador div.jugador ul li{
         margin: 0px -2px;
     }
 
-    section#comparador div.jugador#jug2 div.datos{
+    div#comparador div.jugador#jug2 div.datos{
         margin-bottom: 0px;
         padding-bottom: 79px;
     }
 
 
-    section#comparador div.jugador div.datos div.goles span.resto{
+    div#comparador div.jugador div.datos div.goles span.resto{
         font-size:27px;
     }
 
-    section#comparador div.jugador div.datos div.goles{
+    div#comparador div.jugador div.datos div.goles{
         width: 100%;
     }
 
-    section#comparador div.jugador#jug2 div.datos div.goles{
+    div#comparador div.jugador#jug2 div.datos div.goles{
         position: absolute;
         top: 115px;
         left: 35px;
     }
 
-    section#comparador div.jugador#jug2 div.datos div.nombre {
+    div#comparador div.jugador#jug2 div.datos div.nombre {
         width: calc(100% - 135px);
     }
 
-    section#comparador div.jugador div.datos div.goles br{
+    div#comparador div.jugador div.datos div.goles br{
         display: none;
     }
 
-    section#comparador div.separador{
+    div#comparador div.separador{
             top: 140px;
     }
 
-    section#comparador div.separador::after{
+    div#comparador div.separador::after{
         top: -160px;
     }
 

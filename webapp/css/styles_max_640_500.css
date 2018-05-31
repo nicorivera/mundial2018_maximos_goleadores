@@ -3,12 +3,12 @@
         max-width: 400px;
     }
 
-    section#filtros h2{
+    div#filtros h2{
         width: 100%;
         text-align: center;
     }
 
-    section#filtros h2#titulo2 {
+    div#filtros h2#titulo2 {
         margin-left:0px;
     }
 
@@ -18,60 +18,60 @@
         margin-bottom: 20px;
     }
 
-    section#filtros{
+    div#filtros{
         padding-bottom: 0;
     }
 
-    section#comparador div.separador {
+    div#comparador div.separador {
         display: none;
     }
 
-    section#comparador div.jugador div.datos {
+    div#comparador div.jugador div.datos {
         text-align: center;
             padding: 0px 10% 11px 10%;
     }
 
-    section#comparador div.jugador div.datos div.goles{
+    div#comparador div.jugador div.datos div.goles{
         text-align: center !important;
         font: normal 26px/39px 'Suecaslabbold', georgia;
     }
 
-    section#comparador div.jugador#jug2 div.datos div.goles{
+    div#comparador div.jugador#jug2 div.datos div.goles{
         top: 109px;
         left: 0;
     }
 
-    section#comparador div.jugador div.datos div.goles span.resto {
+    div#comparador div.jugador div.datos div.goles span.resto {
         font-size: 20px;
     }
 
-    div.jugador ul, section#comparador div.jugador p.debut {
+    div.jugador ul, div#comparador div.jugador p.debut {
         text-align: center !important;
         margin-top: 10px;
     }
 
-    section#comparador div.jugador{
+    div#comparador div.jugador{
         margin-bottom: 30px;
     }
 
-    section#comparador div.jugador ul {
+    div#comparador div.jugador ul {
             margin-top: 10px;
-            min-height: 100px;
+            min-height: 280px;
     }
 
-    section#comparador div.jugador div.datos div.nombre {
+    div#comparador div.jugador div.datos div.nombre {
         padding: 12px 0%;
         width: 100%;
     }
 
-    section#comparador div.jugador#jug2 div.datos {
+    div#comparador div.jugador#jug2 div.datos {
         padding-bottom: 67px;
         margin-top: 44px;
         text-align: center;
         position: relative;
     }
 
-    section#comparador div.jugador#jug2 div.datos div.nombre{
+    div#comparador div.jugador#jug2 div.datos div.nombre{
         width: 84%;
     	/* margin-left: 0px; */
     	position: absolute;
@@ -83,7 +83,7 @@
   		border-right: 1px #ccc dashed
   	}
 
-    section#comparador div.jugador#jug2 div.datos div.foto{
+    div#comparador div.jugador#jug2 div.datos div.foto{
         margin-top: 5px;
     }
 
@@ -100,7 +100,7 @@
         min-width: 250px;
     }
 
-    section#comparador div.jugador#jug2 div.datos div.nombre{
+    div#comparador div.jugador#jug2 div.datos div.nombre{
         left: 0%;
     }
     
@@ -116,20 +116,20 @@
        	height:20px;
     }
    
-    section#comparador div.jugador ul li {
+    div#comparador div.jugador ul li {
        	width:12px;
        	height:12px;
        	border-radius: 20px;
        	margin:1px;
     }
     
-    section#comparador div.jugador p.debut {
+    div#comparador div.jugador p.debut {
     	margin:25px 10px 0px 10px;
     	text-align:left !important;
     	line-height:18px;
     }
 
-    section#comparador div.jugador div.datos div.goles span.gol{
+    div#comparador div.jugador div.datos div.goles span.gol{
         font-size: 15px;
         line-height: 25px;
     }

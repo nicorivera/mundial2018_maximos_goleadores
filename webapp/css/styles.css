@@ -132,8 +132,8 @@ section#comparador div.jugador div.datos div.goles span.resto{
 }
 
 section#comparador div.jugador div.datos div.foto{
-    width: 110px;
-    height: 110px;
+    width: 103px;
+    height: 103px;
     border-radius: 100px;
     display: inline-block;
     overflow: hidden;
@@ -143,7 +143,7 @@ section#comparador div.jugador div.datos div.foto{
 section#comparador div.jugador div.datos div.foto img{
     position: absolute;
     left: -3px;
-    z-index: 200;
+    z-index: 150;
 }
 
 section#comparador div.jugador div.datos div.foto:before{
@@ -156,10 +156,11 @@ section#comparador div.jugador div.datos div.foto:before{
     position: absolute;
     bottom: 0px;
     left: 2px;
-    z-index: 100;
+    z-index: 200;
 }
 section#comparador div.jugador#jug1 div.datos div.foto:before{
     background-color: #CD6C67;
+    z-index: 200;
 }
 
 /*section#comparador div.jugador div.nombre div.datos{
@@ -177,12 +178,16 @@ section#comparador div.jugador p.debut{
     margin: 20px 40px;
     margin-bottom: 0;
     color: #77B9E7;
+    position: absolute;
+    vertical-align: bottom;
+    bottom: 0;
 }
 
 
 section#comparador div.jugador#jug1 p.debut{
     text-align: right;
     color: #CD6C67;
+    vertical-align: bottom;
 }
 
 section#comparador div.jugador ul{
@@ -190,7 +195,7 @@ section#comparador div.jugador ul{
     margin: 0px auto;
     margin-top: 30px;
     list-style-type: none;
-    min-height: 350px;
+    min-height: 480px;
 }
 
 section#comparador div.jugador#jug1 ul{
@@ -204,21 +209,20 @@ section#comparador div.jugador ul li{
     width: 45px;
     height: 45px;
     background-size: 45px;
-    
     margin: 1px 5px;
     display: inline-block;
     /*background-image: url("../img/sprite1.svg");*/
     cursor:pointer;
     border-radius:5px;
     border:1px solid #fff;
-    
     background-position: center center;
     transition: all 0.5s;
 }
+
 section#comparador div.jugador ul li.hidden { opacity: 0 !important; }
 
 section#comparador div.jugador ul li:hover{
-   border:1px solid #dadada;
+   border:1px solid #000;
 }
 /*
 section#comparador div.jugador ul li.zurda{
@@ -305,8 +309,8 @@ section#comparador div.jugador ul.filtrado li.tirolibre.activo{
 }
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow{
@@ -392,7 +396,7 @@ section#comparador div.jugador ul.filtrado li.tirolibre.activo{
 
 /* ///// select 2 JUGADOR ///////////*/
 
-#jug2 .select2-container {
+/*#jug2 .select2-container {
     text-align: left !important;
 }
 
@@ -427,6 +431,113 @@ section#comparador div.jugador ul.filtrado li.tirolibre.activo{
     border: 1px solid #77B9E7;
     border-radius: 100px;
     color: #77B9E7;
+}*/
+
+
+#jug2 .select2-container {
+    margin-right: 10px;
+    text-align: left;
+}
+
+#jug2 .select2-container--default .select2-selection--single .select2-selection__rendered{
+    font-family: 'Suecaslabbold', Georgia;
+    color: #77B9E7;
+    text-align: left;
+    line-height: 32px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+#jug2 .select2-container--default .select2-selection--single {
+    border: 1px solid #77B9E7;
+    border-radius: 100px;
+    height: 34px;
+}
+
+/*#jug2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, #jug2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}*/
+
+#jug2 .select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 4px;
+    right: 9px;
+}
+
+#jug2 .select2-dropdown{
+    font-family: 'Suecaslabmedium', Georgia;
+}
+
+#jug2 .select2-results__option {
+    padding: 9px 6px;
+}
+
+/* multiple */
+
+#jug2 .select2-container--default .select2-selection--multiple{
+    border: 1px solid #77B9E7;
+    border-radius: 20px;
+    min-height: 34px;
+    
+}
+
+#jug2 .select2-container--default .select2-search--inline .select2-search__field{
+    font-family: 'Suecaslabmedium', Georgia;
+    color: #000;
+}
+
+#jug2 .select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    padding: 0 15px;
+}
+
+#jug2 .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #77B9E7;
+    border: 0px solid #aaa;
+    border-radius: 15px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 3px;
+    padding: 6px 10px;
+    font-family: 'Suecaslabmedium';
+    font-size: 15px;
+}
+
+#jug2 .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid #0084b4 1px;
+    outline: 0;
+        overflow: hidden;
+}
+
+#jug2 .select2-results__option {
+    padding: 9px 6px;
+    color: #000;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+#jug2 .select2-container--default .select2-selection--multiple .select2-selection__choice{
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#jug2 .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #77B9E7 !important;
+    color: #fff !important;
+}
+#jug2 .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #77B9E7 !important;
+    color: #fff !important;
+}
+#jug2 .select2-container--default .select2-results>.select2-results__options{
+    border-color: #000;
+}
+
+#jug2 .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #77B9E7 transparent transparent transparent;
+}
+#jug2 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent #77B9E7 transparent;
 }
 
 .tooltipd3 {
@@ -471,13 +582,17 @@ section#comparador div.jugador ul.filtrado li.tirolibre.activo{
 .tooltipd3 .row.riv{
     margin-bottom: 10px;
 }
+.tooltipd3 .row.riv span.th.riv{
+    width: 37%;
+}
 
 .tooltipd3 div.linea{
     width: 2px;
-    height: 30px;
+    height: 40px;
     display: inline-block;
     border-right: 1px solid #000;
     margin: auto 5px;
+    vertical-align: top;
 }
 
 .tooltipd3 .row.fech{
@@ -492,4 +607,12 @@ section#comparador div.jugador ul.filtrado li.tirolibre.activo{
 }
 .tooltipd3 .row.tec span.th.tec, .tooltipd3 .row.riv span.th.riv{
     font-family: 'Suecaslabmedium', Georgia;
+}
+
+.azul{
+    background-color: #77B9E7;
+}
+
+.rojo{
+    background-color: #CD6C67;
 }

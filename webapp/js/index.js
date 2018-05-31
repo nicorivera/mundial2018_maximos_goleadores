@@ -46,6 +46,10 @@ var OL = {
                 key: "12TxtgVkm2dbtmvKIuHdO9IptQCZjpmKa3HYFw0gk0P8",
                 debut: "Agüero debutó el 3 de septiembre de 2006, vs. Brasil (0-3).<br> El primer gol llegó en su sexto partido, el 17 de noviembre de 2007, ante Bolivia (3-0)"
             },
+            higuain: {
+                key: "1Il704jpaB9pho8YfsLJDOs9wSJQa5mj4OMiWntfeLU8",
+                debut: "Higuaín debutó el XXXXXXXXXXXXXXXXXX, vs. XXXXXX (0-3).<br> El primer gol llegó en su XXXXXXX partido, el XXXXXXXX, ante XXXXXXXXXX (3-0)"
+            }
         };
         
         /** set data on cache */
@@ -98,7 +102,7 @@ var OL = {
                     }else{
                         ctxt.tipo = this.value;
                     }
-                    _gaq.push(['_trackEvent', 'Goles_Messi', 'select_tipo', this.value]);
+                    _gaq.push(['_trackEvent', 'mundial2018_maximos_goleadores', 'select_tipo', this.value]);
                     updateBreadcrumb();
                 });
 
@@ -116,7 +120,7 @@ var OL = {
                     }else{
                         ctxt.torneo = this.value;
                     }
-                    _gaq.push(['_trackEvent', 'Goles_Messi', 'select_torneo', this.value]);
+                    _gaq.push(['_trackEvent', 'mundial2018_maximos_goleadores', 'select_torneo', this.value]);
                     updateBreadcrumb();
                 });
 
@@ -126,7 +130,7 @@ var OL = {
                     minimumResultsForSearch: Infinity
                 })
                 .on("change", function(){
-                    _gaq.push(['_trackEvent', 'Goles_Messi', 'select_jugadores', this.value]);
+                    _gaq.push(['_trackEvent', 'mundial2018_maximos_goleadores', 'select_jugadores', this.value]);
                     ctxt.versus = this.value;
                     
                     /** reset filters*/
@@ -185,6 +189,7 @@ var OL = {
                     .classed("activo", false)
                     .filter(_filter_class.join(""))
                     .classed("activo", true)
+                    .classed("rojo", true)
                     .style("background-image", function(d){
                         return tmpl_url_gif({
                             name: meke_id(d.modo), 
@@ -197,6 +202,7 @@ var OL = {
                     .classed("activo", false)
                     .filter(_filter_class.join(""))
                     .classed("activo", true)
+                    .classed("azul", true)
                     .style("background-image", function(d){
                         return tmpl_url_gif({
                             name: meke_id(d.modo), 
@@ -227,8 +233,6 @@ var OL = {
                 
                 updateSelect2();
             }
-
-
 
 
             /** update select status */
@@ -336,7 +340,7 @@ var OL = {
 
                 /** update picture */
                 wrapper.select("div.foto img")
-                    .attr("src", "img/caras/"+ p.name + ".png");
+                    .attr("src", "./img/caras/"+ p.name + ".jpg");
 
 
 

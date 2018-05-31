@@ -1,4 +1,4 @@
-Goles de Messi en la selección
+Máximos goleadores de la selección
 ==============================
 
 Comparación de los goles de los máximos goleadores de selección.

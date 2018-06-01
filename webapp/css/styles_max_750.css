@@ -1,7 +1,35 @@
 @media (max-width: 768px) {
 
-     div#comparador div.separador {
-        /*height:940px;*/
+    div#comparador div.separador {
+        height: 740px;
+        top: 190px;
+        margin-top: -25px;
     }
+
+    div#comparador div.separador::after{
+    	top: -75px;
+    }
+
+    div#filtros h2{
+    	padding: 0;
+    }
+
+    div#comparador div.jugador ul{
+        min-height: 650px;
+    }
+
+    div#comparador div.jugador#jug2 div.datos{
+    	padding-bottom: 90px;
+    }
+
+    div.cabezal h1{
+		font-size: 55px;
+		width: 68%;
+	}
+
+	div.cabezal h2{
+		font-size: 18px;
+		width: 68%;
+	}
 
 }

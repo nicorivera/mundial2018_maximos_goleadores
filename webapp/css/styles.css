@@ -5,7 +5,7 @@ div{
     padding: 15px 0;
 }
 
-h2{
+div#filtros h2{
     color: #000;
     font: normal 14px/16px 'suecaslab', georgia;
     display: inline-block;
@@ -227,8 +227,11 @@ div#comparador div.jugador ul li{
 
 div#comparador div.jugador ul li.hidden { opacity: 0 !important; }
 
-div#comparador div.jugador ul li:hover{
-   border:1px solid #000;
+div#comparador div.jugador#jug1 ul li:hover{
+   border: 1px solid #CD6C67;
+}
+div#comparador div.jugador#jug2 ul li:hover{
+   border: 1px solid #77B9E7;
 }
 /*
 div#comparador div.jugador ul li.zurda{
@@ -546,21 +549,20 @@ div#comparador div.jugador ul.filtrado li.tirolibre.activo{
     border-color: transparent transparent #77B9E7 transparent;
 }
 
-.tooltipd3 {
+div.tooltipd3 {
     background:#FFFFFF;
     border: #ccc solid 1px;
     padding: 10px 12px 5px 10px;
     border-radius: 3px;
     display: inline-block;
     z-index: 999;
-
 }
 
-.tooltipd3 .row {
+div.tooltipd3 .row {
     font-family: 'Suecaslabbold', Georgia;
     font-size: 12px;
 }
-.tooltipd3 .row span.th { 
+div.tooltipd3 .row span.th { 
     font-family: 'suecaslab', Georgia;
     /*display: inline-block;*/
     width: 70px;
@@ -569,49 +571,57 @@ div#comparador div.jugador ul.filtrado li.tirolibre.activo{
     margin: 0 5px 0 0; 
  }
 
-.tooltipd3 .row.goln{
+div.tooltipd3 .row.goln{
     display: block;
     text-align: center;
-    margin-top: 5px;
+    margin-left: -20px;
     text-transform: uppercase;
 }
-.tooltipd3 .row.goln span.num {
+div.tooltipd3 .row.goln span.num {
     /*color: #33ACE0;*/
     font-size: 15px;
     text-align: left;
+    margin-left: -10px;
 }
 
-.tooltipd3 .row.riv, .tooltipd3 .row.riv span.th.riv{
+div.tooltipd3 .row.riv, div.tooltipd3 .row.riv span.th.riv{
     display: inline-block;
     text-align: right;
+    vertical-align: middle;
+    margin: 0 auto;
 }
-.tooltipd3 .row.riv{
+div.tooltipd3 .row.riv{
     margin-bottom: 10px;
 }
-.tooltipd3 .row.riv span.th.riv{
+div.tooltipd3 .row.riv span.th.riv{
     width: 37%;
 }
 
-.tooltipd3 div.linea{
+div.tooltipd3 div.linea{
     width: 2px;
-    height: 40px;
+    height: 20px;
     display: inline-block;
     border-right: 1px solid #000;
     margin: auto 5px;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
-.tooltipd3 .row.fech{
-    margin: 5px auto 10px;
+div.tooltipd3 .row.fech{
+    margin: -20px auto;
+    margin-left: -50px;
     text-align: center;
     font-family: 'Suecaslabmedium', Georgia;
 }
 
-.tooltipd3 .row.tec, .tooltipd3 .row.tec span.th.tec{
+div.tooltipd3 .row.tec, div.tooltipd3 .row.tec span.th.tec{
     display: inline-block;
     text-align: left;
+    vertical-align: middle;
 }
-.tooltipd3 .row.tec span.th.tec, .tooltipd3 .row.riv span.th.riv{
+div.tooltipd3 .row.tec{
+    margin: -10px auto 0;
+}
+div.tooltipd3 .row.tec span.th.tec, div.tooltipd3 .row.riv span.th.riv{
     font-family: 'Suecaslabmedium', Georgia;
 }
 
@@ -622,3 +632,106 @@ div#comparador div.jugador ul.filtrado li.tirolibre.activo{
 .rojo{
     background-color: #CD6C67;
 }
+footer{
+    width: 99%;
+    border-top: 1px solid #dadada;
+    padding: 5px 0;
+    margin: 10px auto;
+}
+
+footer p, footer .link-copyright{
+    color: #999;
+    font-size: 11px;
+    font: normal 12px/14px "Arial", Helvetica, sans-serif;
+    margin: 8px 0;
+}
+
+footer .link-copyright{
+    float: right;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+div.cabezal {
+    width: 100%;
+    border: 0;
+    background-color: #262626;
+    padding: 35px 0;
+    text-align:center;
+}
+
+div.cabezal h1 {
+    width: 80%;
+    font-family: 'Suecaslabbold', Georgia;
+    font-size: 72px;
+    padding: 10px 2%;
+    padding-bottom: 0;
+    margin: 0 auto;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 8px;
+    max-width:1280px;
+}
+
+
+div.cabezal h2 {
+    width: 80%;  
+    font-family: 'Suecaslabmedium', Georgia;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 2%;
+    padding-top: 0;
+    line-height: 1.4;
+    margin: 0 auto;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: normal;
+    color: #CD6B66;
+    max-width: 1280px;
+}
+
+/*///////////// REDES ///////////*/
+div.social {
+
+    width: 45px;
+    /* height: 30px; */
+    font-family: arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 12px;
+    z-index: 2000;
+    position: absolute;
+    right: 10px;
+    border-left: 1px solid #a1a1a1;
+}
+
+div.social a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+div.social a.twitter-share-button, div.social a.facebook-share-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px 5px;
+    background-image: url(../img/sprite-redes.svg);
+    background-position: -6px -4px;
+    background-size: 85px; // border: 1px solid #fff;
+    cursor: pointer; //display: none;
+}
+
+div.social a.twitter-share-button {
+    background-position: 39px -4px;
+}
+
+div.social .active {
+    display: inline-block;
+}
+/*/////////  end REDES  //////////*/

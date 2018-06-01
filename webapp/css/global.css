@@ -77,7 +77,8 @@ p{
 }
 
 .container{
-    max-width: 1360px; margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .bajada{
@@ -246,7 +247,7 @@ div.modal div.txts div.nombre a:hover{color:#29ABE2; }
 /*----- font icons ----*/
 /*----- font icons ----*/
 
-@font-face {
+/*@font-face {
   font-family: "especiales";
   src:url("icons/especiales.eot");
   src:url("icons/especiales.eot?#iefix") format("embedded-opentype"),
@@ -264,7 +265,7 @@ div.nav.icon-flecha-menos:before {
 
 div.nav.icon-flecha-mas:before {
   content: "s";
-}
+}*/
 
 /*----- font icons ----*/
 

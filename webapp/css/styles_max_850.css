@@ -4,4 +4,14 @@
         height: 800px;
     }
 
+    div#comparador div.jugador ul{
+        min-height: 510px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    div#comparador div.jugador ul{
+        min-height: 510px;
+    }
 }

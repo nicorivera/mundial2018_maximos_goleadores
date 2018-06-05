@@ -32,7 +32,7 @@ var OL = {
             },
             batistuta: { 
                 key: "1Npr78m7hPHHFyrlZb8yFfUhP6WYK7CIDQtu883a4JU0",
-                debut: "Batistuta debutó el 27 de junio de 1991 vs. Brasil 1-1. <br> El primer gol llegó en su segundo partido, el 8 de julio, ante Venezuela, 3-0, e hizo dos" 
+                debut: "Batistuta debutó el 27 de junio de 1991 vs. Brasil 1-1.<br> El primer gol llegó en su segundo partido, el 8 de julio, ante Venezuela, 3-0, e hizo dos." 
             },
             maradona: {
                 key: "1_8Vo_S7j7ghJX2a-IOVDvmTbU6Iyz8cuKCi95mSTs3k",
@@ -44,11 +44,11 @@ var OL = {
             },
             aguero: {
                 key: "12TxtgVkm2dbtmvKIuHdO9IptQCZjpmKa3HYFw0gk0P8",
-                debut: "Agüero debutó el 3 de septiembre de 2006, vs. Brasil (0-3).<br> El primer gol llegó en su sexto partido, el 17 de noviembre de 2007, ante Bolivia (3-0)"
+                debut: "Agüero debutó el 3 de septiembre de 2006, vs. Brasil (0-3).<br> El primer gol llegó en su sexto partido, el 17 de noviembre de 2007, ante Bolivia (3-0)."
             },
             higuain: {
                 key: "1Il704jpaB9pho8YfsLJDOs9wSJQa5mj4OMiWntfeLU8",
-                debut: "Higuaín debutó el XXXXXXXXXXXXXXXXXX, vs. XXXXXX (0-3).<br> El primer gol llegó en su XXXXXXX partido, el XXXXXXXX, ante XXXXXXXXXX (3-0)"
+                debut: "Higuaín debutó el 11 de octubre de 2009, vs Perú (2-1).<br> Esa misma noche marcó su primer gol con la casaca albiceleste."
             }
         };
         

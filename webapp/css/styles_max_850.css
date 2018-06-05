@@ -7,11 +7,19 @@
     div#comparador div.jugador ul{
         min-height: 510px;
     }
+
+    div.cabezal h1 {
+    	font-size: 55px;
+    }
+
+    div#comparador div.jugador p.debut br{
+    	display: none;
+    }
 }
 
 @media (max-width: 800px) {
 
     div#comparador div.jugador ul{
-        min-height: 510px;
+        min-height: 610px;
     }
 }

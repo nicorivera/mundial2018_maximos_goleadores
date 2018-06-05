@@ -6,11 +6,12 @@
 
     div#filtros h2{
         width: 100%;
+        margin-bottom: 10px;
         text-align: center;
     }
 
     div#filtros h2#titulo2 {
-        margin-left:0px;
+        margin-left: 0px;
     }
 
     #filtros .select2-container {

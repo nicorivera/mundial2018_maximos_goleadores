@@ -1,8 +1,18 @@
 /* Styles for App */
-div{
+/*div{
     position: relative;
-    /*border-top:1px solid #dadada;*/
+    border-top:1px solid #dadada;
     padding: 15px 0;
+}*/
+
+
+/*///// FILTROS /////*/
+
+div#filtros{
+    text-align: center;
+    border-bottom: 1px solid #dadada;
+    margin: 25px auto;
+    padding-bottom: 25px;
 }
 
 div#filtros h2{
@@ -14,11 +24,8 @@ div#filtros h2{
     letter-spacing: .1px;
 }
 
-/*///// FILTROS /////*/
-
-div#filtros{
-    text-align: center;
-    border-bottom: 1px solid #dadada;
+div#filtros h2#titulo2{
+    margin-left: 60px;
 }
 
 div#filtros br{
@@ -30,9 +37,6 @@ div#filtros select{
     vertical-align: top;
 }
 
-div#filtros h2#titulo2{
-    margin-left: 60px;
-}
 
 /*///// COMPARADOR /////*/
 
@@ -45,9 +49,9 @@ div#comparador div.jugador{
     width: 49.5%;
     min-height: 300px;
     display: inline-block;  
-    margin-top: 30px;
     position: relative;
     vertical-align: top;
+    margin-bottom: 30px;
 }
 
 
@@ -56,7 +60,7 @@ div#comparador div.separador{
     height: 100%;
     background-color: #000;
     display: inline-block;
-    top: 210px;
+    top: 140px;
     left: 50%;
     position: absolute;
 }
@@ -93,7 +97,7 @@ div#comparador div.jugador div.datos div.nombre{
     padding: 45px 6%;
     display: inline-block;
     vertical-align: top;
-    color: #CD6C67;
+    color: #FF6665;
 }
 
 div#comparador div.jugador#jug2 div.datos div.nombre{
@@ -118,7 +122,7 @@ div#comparador div.jugador div.datos div.goles{
 
 div#comparador div.jugador#jug1 div.datos div.goles{
     text-align: right;
-    color: #CD6C67;
+    color: #FF6665;
 }
 
 div#comparador div.jugador div.datos div.goles span.gol{
@@ -127,7 +131,6 @@ div#comparador div.jugador div.datos div.goles span.gol{
     line-height: 25px;
     color: #000;
 }
-
 
 div#comparador div.jugador div.datos div.goles span.resto{
     color: #000;
@@ -162,18 +165,11 @@ div#comparador div.jugador div.datos div.foto:before{
     left: 2px;
     z-index: 200;
 }
+
 div#comparador div.jugador#jug1 div.datos div.foto:before{
-    background-color: #CD6C67;
+    background-color: #FF6665;
     z-index: 200;
 }
-
-/*div#comparador div.jugador div.nombre div.datos{
-    width: 55%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 10px 20px;
-}*/
-
 
 div#comparador div.jugador p.debut{
     font-family: 'Suecaslabmedium', georgia;
@@ -187,10 +183,9 @@ div#comparador div.jugador p.debut{
     bottom: 0;
 }
 
-
 div#comparador div.jugador#jug1 p.debut{
     text-align: right;
-    color: #CD6C67;
+    color: #FF6665;
     vertical-align: bottom;
     position: absolute;
     right: 0px;
@@ -228,36 +223,11 @@ div#comparador div.jugador ul li{
 div#comparador div.jugador ul li.hidden { opacity: 0 !important; }
 
 div#comparador div.jugador#jug1 ul li:hover{
-   border: 1px solid #CD6C67;
+   border: 1px solid #FF6665;
 }
 div#comparador div.jugador#jug2 ul li:hover{
    border: 1px solid #77B9E7;
 }
-/*
-div#comparador div.jugador ul li.zurda{
-    background-position: center -1px;
-}
-
-div#comparador div.jugador ul li.diestra{
-    background-position: center -98px;
-}
-
-div#comparador div.jugador ul li.cabeza{
-    background-position: center -196px;
-}
-
-div#comparador div.jugador ul li.tirolibre{
-    background-position: center -290px;
-}
-
-div#comparador div.jugador ul li.penal{
-    background-position: center -398px;
-}
-
-div#comparador div.jugador ul li.mano{
-    background-position: center -506px;
-}
-*/
 
 div#comparador div.jugador ul.filtrado li{
     opacity: 0.2;
@@ -266,35 +236,7 @@ div#comparador div.jugador ul.filtrado li{
 div#comparador div.jugador ul.filtrado li.activo{
     opacity: 1;
 }
-/*
-div#comparador div.jugador ul.filtrado li.derecha.activo{
-    background-image: url("../img/gif/derecha.gif");
-    background-position: center center;
-}
 
-div#comparador div.jugador ul.filtrado li.zurda.activo{
-    background-image: url("../img/gif/izquierda.gif");
-    background-position: center center;
-}
-
-div#comparador div.jugador ul.filtrado li.penal.activo{
-    background-image: url("../img/gif/penal.gif");
-    background-position: center center;
-}
-
-div#comparador div.jugador ul.filtrado li.cabeza.activo{
-    background-image: url("../img/gif/cabeza.gif");
-    background-position: center center;
-}
-
-div#comparador div.jugador ul.filtrado li.tirolibre.activo{
-    background-image: url("../img/gif/tirolibre.gif");
-    background-position: center center;
-}
-*/
-/*------------------------------------*/
-/*------------------------------------*/
-/*------------------------------------*/
 /* SELECT 2 CUSTOM */
 
 .select2-container {
@@ -341,7 +283,6 @@ div#comparador div.jugador ul.filtrado li.tirolibre.activo{
     border: 1px solid #000;
     border-radius: 20px;
     min-height: 34px;
-    
 }
 
 .select2-container--default .select2-search--inline .select2-search__field{
@@ -402,104 +343,63 @@ div#comparador div.jugador ul.filtrado li.tirolibre.activo{
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
     border-color: transparent transparent #000 transparent;
 }
+/* ///// end SELECT 2 CUSTOM ///////////*/
 
-/* ///// select 2 JUGADOR ///////////*/
+/* ///// select 2 JUGADORES ///////////*/
 
-/*#jug2 .select2-container {
-    text-align: left !important;
-}
-
-#jug2 .select2-results__option {
-    padding: 9px 6px;
-    color: #77B9E7;
-    font-family: Arial;
-    font-size: 13px;
-}
-
-#jug2 .select2-container--default .select2-results__option[aria-selected=true] {
-    background-color: #77B9E7 !important;
-    color: #fff;
-}
-#jug2 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #77B9E7 !important;
-    color: #fff;
-}
-
-#jug2 .select2-container--default .select2-selection--single .select2-selection__rendered{
-    color:#77B9E7;
-}
-#jug2 .select2-container--default .select2-selection--single .select2-selection__arrow b{
-    border-color: #77B9E7 transparent transparent transparent;
-}
-
-#jug2 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
-    border-color: transparent transparent #77B9E7 transparent !important;
-}
-
-#jug2 .select2-container--default .select2-selection--single{
-    border: 1px solid #77B9E7;
-    border-radius: 100px;
-    color: #77B9E7;
-}*/
-
-
-#jug2 .select2-container {
+div.nombre .select2-container {
     margin-right: 10px;
     text-align: left;
 }
 
-#jug2 .select2-container--default .select2-selection--single .select2-selection__rendered{
+div.nombre .select2-container--default .select2-selection--single .select2-selection__rendered{
     font-family: 'Suecaslabbold', Georgia;
-    color: #77B9E7;
+    color:#77B9E7;
     text-align: left;
     line-height: 32px;
     padding-left: 20px;
     padding-right: 30px;
 }
 
-#jug2 .select2-container--default .select2-selection--single {
+div.nombre .select2-container--default .select2-selection--single {
     border: 1px solid #77B9E7;
     border-radius: 100px;
     height: 34px;
 }
 
-/*#jug2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, #jug2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px;
-}*/
-
-#jug2 .select2-container--default .select2-selection--single .select2-selection__arrow{
+div.nombre .select2-container--default .select2-selection--single .select2-selection__arrow{
     top: 4px;
     right: 9px;
 }
 
-#jug2 .select2-dropdown{
+div.nombre .select2-dropdown{
     font-family: 'Suecaslabmedium', Georgia;
 }
 
-#jug2 .select2-results__option {
+div.nombre .select2-results__option {
     padding: 9px 6px;
 }
 
 /* multiple */
 
-#jug2 .select2-container--default .select2-selection--multiple{
+div.nombre .select2-container--default .select2-selection--multiple{
     border: 1px solid #77B9E7;
     border-radius: 20px;
     min-height: 34px;
-    
+    color: #77B9E7;
 }
 
-#jug2 .select2-container--default .select2-search--inline .select2-search__field{
+div.nombre .select2-container--default .select2-search--inline .select2-search__field{
     font-family: 'Suecaslabmedium', Georgia;
-    color: #000;
+    color:#77B9E7;
 }
 
-#jug2 .select2-container--default .select2-selection--multiple .select2-selection__rendered{
+div.nombre .select2-container--default .select2-selection--multiple .select2-selection__rendered{
     padding: 0 15px;
+    color: #77B9E7;
 }
 
-#jug2 .select2-container--default .select2-selection--multiple .select2-selection__choice {
+div.nombre .select2-container--default .select2-selection--multiple .select2-selection__choice {
     background-color: #77B9E7;
     border: 0px solid #aaa;
     border-radius: 15px;
@@ -512,116 +412,132 @@ div#comparador div.jugador ul.filtrado li.tirolibre.activo{
     font-size: 15px;
 }
 
-#jug2 .select2-container--default.select2-container--focus .select2-selection--multiple {
+div.nombre .select2-container--default.select2-container--focus .select2-selection--multiple {
     border: solid #0084b4 1px;
     outline: 0;
-        overflow: hidden;
+    overflow: hidden;
 }
 
-#jug2 .select2-results__option {
+div.nombre ul.select2-results__option {
     padding: 9px 6px;
-    color: #000;
+    color: #77B9E7;
     font-family: Arial;
     font-size: 13px;
 }
 
-#jug2 .select2-container--default .select2-selection--multiple .select2-selection__choice{
+div.nombre .select2-container--default .select2-selection--multiple .select2-selection__choice{
     max-width: 220px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#jug2 .select2-container--default .select2-results__option[aria-selected=true] {
-    background-color: #77B9E7 !important;
-    color: #fff !important;
-}
-#jug2 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #77B9E7 !important;
-    color: #fff !important;
-}
-#jug2 .select2-container--default .select2-results>.select2-results__options{
-    border-color: #000;
+div.nombre .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #77B9E7;
+    color: #fff;
 }
 
-#jug2 .select2-container--default .select2-selection--single .select2-selection__arrow b{
+div.nombre .select2-container--default .select2-results>.select2-results__options{
+    border-color: #77B9E7;
+}
+
+div.nombre .select2-container--default .select2-selection--single .select2-selection__arrow b{
     border-color: #77B9E7 transparent transparent transparent;
 }
-#jug2 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+div.nombre .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
     border-color: transparent transparent #77B9E7 transparent;
 }
 
+div.nombre .select2-container .select2-container--default .select2-container--open{
+    color: #77B9E7;
+}
+
+div.nombre .select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: #77B9E7;
+    color: #fff;
+}
+
+div.nombre .select2-container--open .select2-dropdown--below{
+    border-color: #77B9E7 !important;
+}
+
+/*///////////////////  end Select 2 JUGADORES  ///////////////////////////////*/
+
+
+/*///////////   TOOLTIP ////////////////// */
+ 
 div.tooltipd3 {
+    width: auto;
     background:#FFFFFF;
     border: #ccc solid 1px;
-    padding: 10px 12px 5px 10px;
+    padding: 10px;
     border-radius: 3px;
     display: inline-block;
     z-index: 999;
 }
 
-div.tooltipd3 .row {
+div.tooltipd3 div.row {
     font-family: 'Suecaslabbold', Georgia;
     font-size: 12px;
+    margin: auto;
+    text-align: center;
 }
-div.tooltipd3 .row span.th { 
+div.tooltipd3 div.row span.th { 
     font-family: 'suecaslab', Georgia;
-    /*display: inline-block;*/
-    width: 70px;
-    text-align: right;
-    padding: 5px 10px 5px 0;
-    margin: 0 5px 0 0; 
+    display: inline-block;
+    text-align: center;
+    /*padding: 5px 10px 5px 0;*/
+    margin: 0; 
  }
 
-div.tooltipd3 .row.goln{
-    display: block;
-    text-align: center;
-    margin-left: -20px;
-    text-transform: uppercase;
-}
-div.tooltipd3 .row.goln span.num {
-    /*color: #33ACE0;*/
-    font-size: 15px;
+div.tooltipd3 div.row span.goln {
+    font-family: 'Suecaslabbold', Georgia;
+    font-size: 17px;
     text-align: left;
-    margin-left: -10px;
+    padding-left: 5px;
+}
+div.tooltipd3 div.row span.num {
+    font-family: 'Suecaslabbold', Georgia;
+    /*color: #33ACE0;*/
+    font-size: 18px;
+    text-align: left;
+    padding-left: 5px;
 }
 
-div.tooltipd3 .row.riv, div.tooltipd3 .row.riv span.th.riv{
-    display: inline-block;
+
+div.tooltipd3 div.riv, div.tooltipd3 div.riv span.riv{
     text-align: right;
-    vertical-align: middle;
+    vertical-align: top;
     margin: 0 auto;
 }
-div.tooltipd3 .row.riv{
+div.tooltipd3 div.riv{
+    display: inline-block !important;
     margin-bottom: 10px;
 }
-div.tooltipd3 .row.riv span.th.riv{
-    width: 37%;
+div.tooltipd3 div.riv span.riv{
 }
 
 div.tooltipd3 div.linea{
     width: 2px;
-    height: 20px;
-    display: inline-block;
+    height: 30px;
+    display: inline-block !important;
     border-right: 1px solid #000;
     margin: auto 5px;
-    vertical-align: middle;
 }
 
-div.tooltipd3 .row.fech{
-    margin: -20px auto;
-    margin-left: -50px;
+div.tooltipd3 div.fech{
+    margin: 5px auto 15px;
     text-align: center;
     font-family: 'Suecaslabmedium', Georgia;
 }
 
-div.tooltipd3 .row.tec, div.tooltipd3 .row.tec span.th.tec{
-    display: inline-block;
+div.tooltipd3 div.tec, div.tooltipd3 div.tec span.tec{
     text-align: left;
-    vertical-align: middle;
+    vertical-align: top;
 }
-div.tooltipd3 .row.tec{
-    margin: -10px auto 0;
+div.tooltipd3 div.tec{
+    display: inline-block !important;
+    margin: 0px auto;
 }
-div.tooltipd3 .row.tec span.th.tec, div.tooltipd3 .row.riv span.th.riv{
+div.tooltipd3 div.tec span.tec, div.tooltipd3 div.riv span.riv{
     font-family: 'Suecaslabmedium', Georgia;
 }
 
@@ -630,8 +546,10 @@ div.tooltipd3 .row.tec span.th.tec, div.tooltipd3 .row.riv span.th.riv{
 }
 
 .rojo{
-    background-color: #CD6C67;
+    background-color: #FF6665;
 }
+/*///////////   END TOOLTIP ////////////////// */
+
 footer{
     width: 99%;
     border-top: 1px solid #dadada;
@@ -689,7 +607,7 @@ div.cabezal h2 {
     letter-spacing: normal;
     text-align: center;
     font-weight: normal;
-    color: #CD6B66;
+    color: #FF6665;
     max-width: 1280px;
 }
 

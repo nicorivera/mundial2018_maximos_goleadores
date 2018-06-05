@@ -10,7 +10,7 @@
 
     div#comparador div.jugador#jug2 div.datos{
         margin-bottom: 0px;
-        padding-bottom: 90px;
+        padding-bottom: 75px;
     }
 
 
@@ -38,6 +38,8 @@
 
     div#comparador div.separador{
             top: 40px;
+            margin-top: 110px;
+            height: 640px;
     }
 
     div#comparador div.separador::after{

@@ -54,10 +54,10 @@ GOOGLE ANALYTICS >>> CHANGE data-page tag content ...
 
         <div class="social">
 
-            <a class="facebook-share-button redes" title="Compartilo en Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.lanacion.com.ar/2132931" target="_blank" onclick="window.open(this.href, this.target, 'width=555,height=400'); return false;">
+            <a class="facebook-share-button redes" title="Compartilo en Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.lanacion.com.ar/xxxxxxxxxxxxxxxx" target="_blank" onclick="window.open(this.href, this.target, 'width=555,height=400'); return false;">
                         </a>
             <a class="twitter-share-button redes"
-                href="https://twitter.com/share?url=http://www.lanacion.com.ar/2132931&text=MI SELECCION: Descartá 12 jugadores de los convocados por Sampaoli y armá tu lista de 23 para el Mundial&hashtags=Rusia2018, mundial2018, LANACION&via=lanacion&size=large"
+                href="https://twitter.com/share?url=https://www.lanacion.com.ar/xxxxxxxxxxxxxxxxxxxx&text=MI SELECCION: Descartá 12 jugadores de los convocados por Sampaoli y armá tu lista de 23 para el Mundial&hashtags=Rusia2018, mundial2018, LANACION&via=lanacion&size=large"
                 title="Compartilo en Twitter"
                 onClick="window.open(this.href, this.target, 'width=555,height=400'); return false;"></a>
 
@@ -164,6 +164,25 @@ GOOGLE ANALYTICS >>> CHANGE data-page tag content ...
         <!-- <div class="row"><span class="th">Modo</span> <span class="blue"><%= modo %></span></div> -->
     </script>
 
+        <!-- HACK LN styles HTML libre -->
+
+    <style>
+        body header#cabezal.desplegado.logueado .logueo .desplegable-usuario a.salir, 
+        body header#cabezal.desplegado.suscripto .logueo .desplegable-usuario a.salir,
+        body header#cabezal.desplegado.logueado .icon-menu-desktop:after, 
+        body header#cabezal.desplegado.suscripto .icon-menu-desktop:after{
+            color:#fff;
+        }
+        @media screen and (max-width: 767px){
+            body header .herramientas button{
+               background: #262626 !important;
+                color: #fff !important;
+                border: 1px solid #464646 !important; 
+            }
+        }
+    </style>
+    <!--end HACK LN styles HTML libre -->
+
 </body>
 </html>
 
@@ -181,3 +200,9 @@ GOOGLE ANALYTICS >>> CHANGE data-page tag content ...
 <script src="js/index.js"></script>
 <!-- endbuild -->
 
+<script>
+    var $header = $("#cabezal");
+    $header.addClass("transparente");
+    $header.css({ "background-color": "#262626", "border-bottom": "1px solid #727272" });
+    $("main#item-nota").css({ "max-width": "100%", "margin-top": "50px", "padding": 0 });
+</script>
